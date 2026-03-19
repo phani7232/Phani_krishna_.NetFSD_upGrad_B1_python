@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input {
+        width: 50%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        }
+    </style>
+</head>
+<body>
+
+<header class="app-header">
+    <h1 class="main-title">E-Learning Platform</h1>
+</header>
+<nav class="nav-bar">
+    <a href="Dashboard.html" id="nav-dashboard">Dashboard</a>
+    <a href="Courses.html" id="nav-courses">Courses</a>
+    <a href="Quiz.html" id="nav-quiz">Quiz</a>
+    <a href="Profile.html" id="nav-profile">Profile</a>
+</nav>
+<main class="container">
+
+<p class="breadcrumb">
+    <a href="Dashboard.html">Home</a> > Profile
+</p>
+
+<h2>Learner Profile</h2>
+<h3>Personal Information</h3>
+
+<div class="card">
+    <label>Name:</label>
+    <input type="text" id="nameInput" placeholder="Enter name"><br><br>
+
+    <label>Email:</label>
+    <input type="email" id="emailInput" placeholder="Enter email"><br><br>
+
+    <label>Phone:</label>
+    <input type="text" id="phoneInput" placeholder="Enter phone">
+
+    <br><br>
+    <button onclick="saveProfile()">Save</button>
+</div>
+
+
+<!-- SCORES -->
+<h3>Performance</h3>
+<div class="grid">
+
+    <div class="card">
+        <h4>Latest Score</h4>
+        <p id="latestScore"></p>
+    </div>
+
+    <div class="card">
+        <h4>Best Score</h4>
+        <p id="bestScore"></p>
+    </div>
+
+</div>
+
+<!-- QUIZ HISTORY -->
+<h3>Quiz History</h3>
+<div class="card">
+    <ul id="quizHistory"></ul>
+</div>
+
+</main>
+<footer class="footer">
+    <p>© 2026 E-Learning Platform | Built by Phani</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

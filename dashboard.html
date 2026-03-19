@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Learning Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h2,h3{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header class="app-header">
+    <h1 class="main-title">E-Learning Platform</h1>
+</header>
+
+<nav class="nav-bar">
+    <a href="Dashboard.html">Dashboard</a>
+    <a href="Courses.html" >Courses</a>
+    <a href="Quiz.html" >Quiz</a>
+    <a href="Profile.html">Profile</a>
+</nav>
+
+<main class="container">
+<h2 id="welcomeText">Welcome back</h2>
+<div class="grid">
+    <div class="card">
+        <h4>Total Courses</h4>
+        <p id="totalCourses"></p>
+    </div>
+
+    <div class="card">
+        <h4>Completed</h4>
+        <p id="completedCourses"></p>
+    </div>
+
+    <div class="card">
+        <h4>Progress</h4>
+        <progress id="progressBar" max="100"></progress>
+    </div>
+</div>
+
+<!-- QUICK ACTIONS -->
+<h3>Quick Actions</h3>
+<div class="grid">
+    <div class="card">
+        <button onclick="location.href='Courses.html'">Browse Courses</button>
+    </div>
+    <div class="card">
+        <button onclick="location.href='Quiz.html'">Take Quiz</button>
+    </div>
+    <div class="card">
+        <button onclick="location.href='Profile.html'">Profile</button>
+
+    </div>
+</div>
+
+<!-- PROGRESS DETAILS -->
+<h3>Progress Details</h3>
+<div class="card">
+    <p id="progressText"></p>
+</div>
+
+<!-- RECENT QUIZ -->
+<h3>Recent Quiz Result</h3>
+<div class="card">
+    <p id="recentQuiz"></p>
+</div>
+<h3>Quiz History</h3>
+<div class="card">
+    <ul id="quizHistory"></ul>
+</div>
+<footer class="footer">
+    <p>© 2026 E-Learning Platform | Built by Phani </p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
