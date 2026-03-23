@@ -280,13 +280,6 @@ if (document.getElementById("totalCoursesProfile")) {
     // BASIC DATA
     document.getElementById("totalCoursesProfile").innerText = courses.length;
     document.getElementById("completedProfile").innerText = completed.length;
-
-    // PROGRESS
-    let percent = Math.round((completed.length / courses.length) * 100);
-
-    document.getElementById("profileProgress").value = percent;
-    document.getElementById("profilePercent").innerText = percent + "%";
-
     // SCORES
     if (scores.length > 0) {
         let latest = scores[scores.length - 1].score;
